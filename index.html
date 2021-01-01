@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Local Storage</title>
+        <style>
+        .myDiv {
+            background-color:#D9D8D8;
+            opacity: 0.8;
+            width:50%;
+            height:64%;
+	        top:0;
+	        bottom: 0;
+	        left: 0;
+	        right: 0;
+	        margin: auto;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            font-size: large;
+            font-weight: 800;
+        }
+        .container {
+            background-color:dimgrey;
+            border-radius: 25px;
+            padding: 37px;
+        }
+        .top {
+            text-align:center;
+            font-weight: bold;
+            font-size:30px;
+            color:black;
+        }
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "top">
+                <h1 style="color:white">Local Storage</h1>
+                <div class ="myDiv">
+                    Key : <input type="text" id="take_input_key"><br><br>
+                    Data to Store : <input type="text" id="take_input"><br><br>
+                    Time to live(secs) : <input type="text" id="take_ttl"><br><br>
+                    <button type="button" id="save_value">Create</button>
+                    <br>
+                    <label><span id="error_value"></span></label><br>
+                    <br>
+                    Key Value to Read Data: <input type="text" id="take_input_key_read"><br>
+                    <button type="button" id="read_localstorage">Read</button>
+                    <br>
+                    <label>Local Storage Value : <span id="localstorage_value"></span></label>
+                    <br><br>
+                    Key Value : <input type="text" id="take_input_key_delete"><br>
+                    <button type="button" id="delete_data">Delete</button><br>
+                    <label><span id="on_delete_value"></span></label>
+                    <br><br>
+                    <button type="button" id="read_all_data">Read All Data In Console</button>
+                    <script src="js_localstorage.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
